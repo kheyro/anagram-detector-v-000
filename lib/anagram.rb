@@ -9,5 +9,6 @@ class Anagram
     sentence.each do |word|
       return word if word.split("").sort == @word.split("").sort
     end
+    []
   end
 end
