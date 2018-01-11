@@ -6,9 +6,10 @@ class Anagram
   end
 
   def match(sentence)
+    matches = []
     sentence.each do |word|
-      return word if word.split("").sort == @word.split("").sort
+      matches << word if word.split("").sort == @word.split("").sort
     end
-    []
+    matches
   end
 end
